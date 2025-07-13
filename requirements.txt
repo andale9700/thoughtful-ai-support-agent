@@ -3,5 +3,4 @@ openai>=1.95.0
 python-dotenv>=1.0.0
 thefuzz>=0.19.0
 pytest>=7.4.0
-numpy>=1.26.0
-# sentence-transformers>=2.3.0  # Optional: will fallback to keyword matching if not available 
+numpy>=1.26.0 

@@ -4,11 +4,7 @@ Entry point for the Streamlit application
 """
 
 import streamlit as st
-try:
-    from question_matcher import find_best_match
-except ImportError:
-    # Fallback to lightweight version if sentence-transformers isn't available
-    from question_matcher_lite import find_best_match
+from question_matcher import find_best_match
 from llm_service import get_llm_response, get_llm_response_streaming
 from config import APP_TITLE, WELCOME_MESSAGE
 
